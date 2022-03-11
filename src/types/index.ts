@@ -1,4 +1,4 @@
-import type { App } from 'vue'
+import type { App, Ref } from 'vue'
 import type { RouteRecordRaw, Router } from 'vue-router'
 import type { HeadClient } from '@vueuse/head'
 
@@ -17,8 +17,15 @@ export interface CustomTargetEvent<T extends HTMLElement> extends Event {
   clientX: number
 }
 
+export interface ToastMessage {
+  message: string
+  variant?: ToastVariant
+  duration: number
+  show: Ref<boolean>
+  timeoutId?: NodeJS.Timeout
+}
 export type ToastVariant =
-  'success' | 'danger' | 'warning' | 'info'
+ 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info'
 
 export type ToastPosition =
 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { addToast } from '~/services/toast'
+import { createToastMessage } from '~/services/toast'
 
 useHead({
   meta: [
@@ -9,7 +9,11 @@ useHead({
 
 onMounted(() => {
   setTimeout(() => {
-    addToast(`Whats this?`, 'info', false, 'bottom-middle')
+    createToastMessage('Whats this? primary', 'primary')
+    createToastMessage('Whats this? secondary', 'secondary')
+    createToastMessage('Whats this? success', 'success')
+    createToastMessage('Whats this? info', 'info')
+    createToastMessage('Whats this? danger', 'danger')
   }, 5000,
   )
 })
@@ -17,8 +21,8 @@ onMounted(() => {
 
 <template>
   <router-view v-slot="{ Component }">
-    <Transition name="fade" mode="out-in">     
-        <component :is="Component" />
+    <Transition name="fade" mode="out-in">
+      <component :is="Component" />
     </Transition>
   </router-view>
 </template>
