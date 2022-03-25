@@ -8,7 +8,7 @@ const toastMessages: Ref<ToastMessage[]> = ref([])
 /**
  * The default duration for a toast message.
  */
-const defaultToastMessageDuration = 20000
+const defaultToastMessageDuration = 5000
 
 /**
  * Hide the toast message after a timeout and delete it from toastMessages

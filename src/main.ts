@@ -3,7 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
-import Toast from '~/components/layout/Toast.vue'
+
+import '~/services/toast'
 
 // windicss layers
 import 'virtual:windi-base.css'
@@ -37,7 +38,3 @@ app.use(router)
 Object.values(import.meta.globEager('./modules/*.ts')).map(i => i.install?.({ app, router, routes }))
 
 app.mount('#app')
-
-// Other apps for our notifications and toasts
-const toastApp = createApp(Toast)
-toastApp.mount('#toasts')
