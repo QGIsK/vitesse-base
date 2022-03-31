@@ -23,6 +23,7 @@ specifiers:
   moment: ^2.29.1
   nprogress: ^0.2.0
   pinia: ^2.0.11
+  plausible-tracker: ^0.3.5
   pnpm: ^6.30.1
   prism-theme-vars: ^0.2.2
   sass: ^1.49.7
@@ -51,6 +52,7 @@ dependencies:
   moment: 2.29.1
   nprogress: 0.2.0
   pinia: 2.0.11_typescript@4.5.5+vue@3.2.30
+  plausible-tracker: 0.3.5
   prism-theme-vars: 0.2.2
   sass: 1.49.7
   vue: 3.2.30
@@ -1429,8 +1431,8 @@ packages:
       - supports-color
     dev: true
 
-  /@intlify/bundle-utils/2.2.0_vue-i18n@9.1.9:
-    resolution: {integrity: sha512-qVuN7+c84UB6rlLHSued2J9R86LG1rHg6ZibCghGMyPXnW0nOuIfkUFf1F7tXIqfMXjIPeJzlbpmzjWTI2z9Kw==}
+  /@intlify/bundle-utils/2.2.1_vue-i18n@9.1.9:
+    resolution: {integrity: sha512-8n8zhYEKypS+KP22KUAC6BnQifJDDWUGcn3OVPqsThqMMucU22MShGvOuiKqQ4AeT7XQ5O4pudlJmxv3L91JrQ==}
     engines: {node: '>= 12'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -1441,8 +1443,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.2.0-beta.30
-      '@intlify/shared': 9.2.0-beta.30
+      '@intlify/message-compiler': 9.2.0-beta.33
+      '@intlify/shared': 9.2.0-beta.33
       jsonc-eslint-parser: 1.4.1
       source-map: 0.6.1
       vue-i18n: 9.1.9_vue@3.2.30
@@ -1477,11 +1479,11 @@ packages:
       source-map: 0.6.1
     dev: false
 
-  /@intlify/message-compiler/9.2.0-beta.30:
-    resolution: {integrity: sha512-2kj/0nLIFrgiO86f9VifcUUcV8LdzXt4YYPIujx/LkTEQOuSFUo/bNiMaG1hyfiU/8mfq6tsaWKjoOZjeao1eQ==}
+  /@intlify/message-compiler/9.2.0-beta.33:
+    resolution: {integrity: sha512-+SICjFlnHSbRLZT+sNdBvOAQfcNX+fESyMmgPxC8HHWu4GLN2CoVQS4ACXb3QBZDKLVJBFhFGMnl+UXyJrno6g==}
     engines: {node: '>= 12'}
     dependencies:
-      '@intlify/shared': 9.2.0-beta.30
+      '@intlify/shared': 9.2.0-beta.33
       source-map: 0.6.1
     dev: true
 
@@ -1504,8 +1506,8 @@ packages:
     engines: {node: '>= 10'}
     dev: false
 
-  /@intlify/shared/9.2.0-beta.30:
-    resolution: {integrity: sha512-E1WHRTIlUEse3d/6t1pAagSXRxmeVeNIhx5kT80dfpYxw8lOnCWV9wLve2bq9Fkv+3TD2I5j+CdN7jvSl3LdsA==}
+  /@intlify/shared/9.2.0-beta.33:
+    resolution: {integrity: sha512-HldlkV66vMt1vQsuUz4zjQ202C5KW6aHeIQhx7RxBO11i3E8V84dp5MG9epr9GZXVsrCAR56Ekj0HaTqksIRJA==}
     engines: {node: '>= 12'}
     dev: true
 
@@ -1522,8 +1524,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/bundle-utils': 2.2.0_vue-i18n@9.1.9
-      '@intlify/shared': 9.2.0-beta.30
+      '@intlify/bundle-utils': 2.2.1_vue-i18n@9.1.9
+      '@intlify/shared': 9.2.0-beta.33
       '@rollup/pluginutils': 4.1.2
       debug: 4.3.3
       fast-glob: 3.2.11
@@ -4781,6 +4783,11 @@ packages:
       typescript: 4.5.5
       vue: 3.2.30
       vue-demi: 0.12.1_vue@3.2.30
+    dev: false
+
+  /plausible-tracker/0.3.5:
+    resolution: {integrity: sha512-6c6VPdPtI9KmIsfr8zLBViIDMt369eeaNA1J8JrAmAtrpSkeJWvjwcJ+cLn7gVJn5AtQWC8NgSEee2d/5RNytA==}
+    engines: {node: '>=10'}
     dev: false
 
   /pluralize/8.0.0:
